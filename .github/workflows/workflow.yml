@@ -9,13 +9,8 @@ jobs:
       
       - uses: actions/setup-node@v4
 
-      - name: Setup
-        id: S01
-        run: make setup
+      -  run: make setup
       
-      - name: Test
-        id: T01
-        run: tests
+      -  run: make test
 
-      - name: Linter
-        id: L01
+      -  run: make lint
